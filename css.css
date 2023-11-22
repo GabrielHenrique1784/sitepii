@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
-    color:white;
+ 
 }
 
 :root {
@@ -34,32 +34,56 @@ header {
     width: 100%;
 }
 
+
+
 main {
     grid-area: m;
     display: inline;
 
 }
 
+
+
 footer {
     grid-area: f;
     background-color: var(--cor-fundo);
-    color: #fff;
+    color: #ffffff;
     width: 100%;
     font-size: small;
     text-align: center;
 }
 .contatos{
-  display: inline;
+  display: flex;
   padding: 10px;
   margin: 10px;
   text-decoration: none;
+  color: rgb(255, 255, 255);
+  gap: 10px;
+  margin: auto;
+  width: 300px;
+  flex-direction: column;
+}
+
+.contatos > ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin:  10px auto;
+  padding: 5px;
+}
+
+a{
   color: white;
 }
+
 .margin-footer{
   padding: 1.5%;
+  color: rgb(255, 255, 255);
 }
+
+
 body {
-    color: #ddd;
+    color: #000000;
     background-color: var(--cor-footer);
 }
 
@@ -100,7 +124,7 @@ body {
 }
 
 .topnav a.icon {
-    background: var(--cor-fundo);
+    background: white;
     display: block;
     position: absolute;
     right: 0;
@@ -121,12 +145,13 @@ body {
 
 .oqueHistoria {
     height: 60vh 100%;
-    color: var(--cor-clara);
+   color: var(--cor-fundo);
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 6%;
     border: 0;
     text-align: justify;
+
 }
 
 .seção1 {
@@ -178,6 +203,7 @@ body {
     border-radius: 20px;
     color: var(--cor-clara);
     text-decoration: none;
+    transition: 0.5s;
   }
   
   .card img {
@@ -196,9 +222,11 @@ body {
   }
   
   .card:hover{
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
+    scale: 1.1;
     background: var(--cor-footer);
     color: var(--cor-clara);
+    transition: 1s;
   }
 
   .card img{
