@@ -259,15 +259,7 @@ body {
 /*===========================================
 RESPONSIVIDADE
 ===========================================*/
-@media screen and (max-width:800px){
-  #menu-tela-grande{
-    display:none;
 
-  }
-  #links-menu{
-    display: none;
-  }
-}
   @media screen and (max-width:580px){
     .card-container{
       margin: 0% 5%;
