@@ -124,6 +124,7 @@ body {
 }
 
 .topnav a.icon {
+  background-color: #ddd;
     display: block;
     position: absolute;
     right: 0;
