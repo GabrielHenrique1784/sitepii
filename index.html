@@ -7,40 +7,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css.css">
     <link rel="icon" type="image/x-icon" href="imagem/fiveicon.png">
-    <script>
-        function myFunction() {
-            var x = document.getElementById("links-menu");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
+
     <title>Idade Média</title>
 </head>
 
 <body>
     <header class="tudo-menu">
-1
+        <h1>HISTÓRIA</h1>
         <div class="topnav">
-            <h1>HISTÓRIA</h1>
-            <nav>
-                <div id="links-menu">
-                    <ul>
-                        <li><a href="hominidios.html">Hominídeos</a></li>
-                        <li><a href="greciantiga.html">Grécia Antiga</a></li>
-                        <li><a href="idademedia.html">Idade Média</a></li>
-                        <li><a href="imperioromano.html">Império Romano</a></li>
-                        <li><a href="grandesdescobertas.html">Grandes Descobertas</a></li>
-                        <li><a href="sambaqui.html">Sambaquis</a></li>
-                    </ul>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </nav>
+
+
+            <ul id="navBar">
+                <li><a href="greciantiga.html">Grécia Antiga</a></li>
+                <li><a href="idademedia.html">Idade Média</a></li>
+                <li><a href="imperioromano.html">Império Romano</a></li>
+                <li><a href="grandesdescobertas.html">Grandes Descobertas</a></li>
+                <li><a href="sambaqui.html">Sambaquis</a></li>
+            </ul>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            ☰ </a>
+            <div id="linkMenus">
+                <li><a href="greciantiga.html" class="linkRes">Grécia Antiga</a></li>
+                <li><a href="idademedia.html" class="linkRes">Idade Média</a></li>
+                <li><a href="imperioromano.html" class="linkRes">Império Romano</a></li>
+                <li><a href="grandesdescobertas.html"  class="linkRes"> Grandes Descobertas</a></li>
+                <li><a href="sambaqui.html" class="linkRes">Sambaquis</a></li>
+            </div>
     </header>
     <main>
         <section class="seção1">
@@ -119,40 +112,49 @@
                                 </a>
                             </div>
                         </li>
-                        <li>
-                            <div class="card">
-                                <a href="sambaqui.html">
-                                    <img src="imagem/sambaquis.jpg" alt="Imagem 5">
-                                    <h3>Sambaquis</h3>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="margin-footer">
-            <strong>Feito por: </strong>
-            <p>Davi da Rosa, Gabriel Henrique Perereira, Henrique Vogelsanger.</p>
-        </div>
-        <div class="contatos">
-                <ul>
-                    <li><h4><strong>GitHub</strong></h4></li>
-                    <li><a target="_blank" href="https://github.com/ohdavir">@ohdavir</a></li>
-                    <li><a target="_blank" href="https://github.com/GabrielHenrique1784">@GabrielHenrique1784</a></li>
-                    <li><a target="_blank" href="https://github.com/HenriqueVogelsanger">@HenriqueVogelsanger</a></li>
-                </ul>
-            
-                <ul>
-                    <li><h4><strong>Instagram</strong></h4></li>
-                    <li><a target="_blank" href="https://instagram.com/ohdavi.r/">@ohdavi.r</a></li>
-                    <li><a target="_blank" href="https://instagram.com/gabriel.gh7/">@gabriel.gh7</a></li>
-                    <li><a target="_blank" href="https://instagram.com/henriquevogelsanger/">@henriquevogelsanger</a></li>
-                </ul>
-        </div>
-    </footer>
+                        <div class="margin-footer">
+                            <strong>Feito por: </strong>
+                            <p>Davi da Rosa, Gabriel Henrique Perereira, Henrique Vogelsanger.</p>
+                        </div>
+                        <div class="contatos">
+                            <ul>
+                                <li>
+                                    <h4><strong>GitHub</strong></h4>
+                                </li>
+                                <li><a target="_blank" href="https://github.com/ohdavir">@ohdavir</a></li>
+                                <li><a target="_blank"
+                                        href="https://github.com/GabrielHenrique1784">@GabrielHenrique1784</a></li>
+                                <li><a target="_blank"
+                                        href="https://github.com/HenriqueVogelsanger">@HenriqueVogelsanger</a></li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <h4><strong>Instagram</strong></h4>
+                                </li>
+                                <li><a target="_blank" href="https://instagram.com/ohdavi.r/">@ohdavi.r</a></li>
+                                <li><a target="_blank" href="https://instagram.com/gabriel.gh7/">@gabriel.gh7</a></li>
+                                <li><a target="_blank"
+                                        href="https://instagram.com/henriquevogelsanger/">@henriquevogelsanger</a></li>
+                            </ul>
+                        </div>
+                        </footer>
+                        <script>
+let aberta = false
+                            function myFunction() {
+                                
+                                var x = document.getElementById("linkMenus");
+                                if (aberta == false) {
+                                    x.style.display = "none";
+                                    aberta = true
+                                } else {
+                                    x.style.display = "flex";
+                                    x.style.flexDirection = "column"
+                                    x.style.alignItems = "center"
+                                aberta = false
+                                }
+                            }
+                        </script>
 </body>
 
 </html>

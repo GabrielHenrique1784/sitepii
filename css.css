@@ -1,58 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
- 
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+
 }
 
 :root {
-    --cor-fundo: #201f47;
-    --cor-fundo2: rgba(18, 62, 165, 0.637);
-    --cor-fundo3: #2e3664;
-    --cor-hover: #201f4757;
-    --cor-clara: #100f49;
-    --cor-primaria: #fff;
-    --cor-footer: #ffffff;
+  --cor-fundo: #201f47;
+  --cor-fundo2: rgba(18, 62, 165, 0.637);
+  --cor-fundo3: #2e3664;
+  --cor-hover: #201f4757;
+  --cor-clara: #100f49;
+  --cor-primaria: #fff;
+  --cor-footer: #ffffff;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 3% 1fr;
-    grid-template-rows: 10vh 80vh 10vh;
-    grid-template-areas: "h h"
-                         "m m"
-                         "f f";
+  display: grid;
+  grid-template-columns: 3% 1fr;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas: "h h"
+    "m m"
+    "f f";
 }
 
-header {
-    grid-area: h;
-    background-color: var(--cor-fundo3);
-    width: 100%;
-}
-
-
-
-main {
-    grid-area: m;
-    display: inline;
+x main {
+  grid-area: m;
+  display: inline;
 
 }
 
 
 
 footer {
-    grid-area: f;
-    background-color: var(--cor-fundo);
-    color: #ffffff;
-    width: 100%;
-    font-size: small;
-    text-align: center;
+  grid-area: f;
+  background-color: var(--cor-fundo);
+  color: #ffffff;
+  width: 100%;
+  font-size: small;
+  text-align: center;
 }
-.contatos{
+
+.contatos {
   display: flex;
   padding: 10px;
   margin: 10px;
@@ -64,118 +57,139 @@ footer {
   flex-direction: column;
 }
 
-.contatos > ul {
+.contatos>ul {
   display: flex;
   gap: 10px;
   flex-direction: column;
-  margin:  10px auto;
+  margin: 10px auto;
   padding: 5px;
 }
 
-a{
+a {
   color: white;
 }
 
-.margin-footer{
+.margin-footer {
   padding: 1.5%;
   color: rgb(255, 255, 255);
 }
 
 
 body {
-    color: #000000;
-    background-color: var(--cor-footer);
+  color: #000000;
+  background-color: var(--cor-footer);
 }
 
-.tudo-menu {
-    padding: 0;
-    margin: auto;
-    background-color: var(--cor-fundo);
-    color: white;
-    display: inline;
+header.tudo-menu {
+  padding: 10px;
+  margin: auto;
+  background-color: var(--cor-fundo);
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .topnav {
-    overflow: hidden;
-    background-color: var(--cor-fundo);
-    position: relative;
+  overflow: hidden;
+  background-color: var(--cor-fundo);
+  position: relative;
 }
 
 .topnav #links-menu {
-    display: none;
+  display: none;
 }
 
 .tudo-menu h1 {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
 }
 
 .topnav a {
-    background: var(--cor-fundo);
-    
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    display: block;
-    transition: 0.4s;
+  background: var(--cor-fundo);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.4s;
+}
+
+a.icon {
+  display: none;
+
+}
+
+a.icon:hover {
+  background-color: #ddd;
+
+  transition: 0.4s;
+  color: black;
+  border-radius: 10px;
 }
 
 .topnav a.icon {
   background-color: #ddd;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: 0.4s;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+  display: none;
+}
+
+ul#navBar {
+  display: flex;
 }
 
 .topnav a.icon :hover {
-    background-color: #ddd;
-    color: black;
-    transition: 0.4s;
+  background-color: #ddd;
+  color: black;
+  transition: 0.4s;
+  display: none;
 }
 
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 .oqueHistoria {
-    height: 60vh 100%;
-   color: var(--cor-fundo);
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 6%;
-    border: 0;
-    text-align: justify;
+  height: 60vh 100%;
+  color: var(--cor-fundo);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 6%;
+  border: 0;
+  text-align: justify;
 
 }
 
 .seção1 {
-    background-color: var(--cor-footer);
-    margin: 0;
-    display: flex;
-    border: 0;
+  background-color: var(--cor-footer);
+  margin: 0;
+  display: flex;
+  border: 0;
 }
 
 .seção2 h2 {
-    text-align: center;
-    background-color: var(--cor-fundo);
-    color: var(--cor-footer);
-    margin-top: 10%;
+  text-align: center;
+  background-color: var(--cor-fundo);
+  color: var(--cor-footer);
+  margin-top: 10%;
 }
 
 .seção2 {
-    margin-top: 5%;
-    background-color: #fff;
+  margin-top: 5%;
+  background-color: #fff;
 }
-.cards1{
-    background-color: var(--cor-fundo);
+
+.cards1 {
+  background-color: var(--cor-fundo);
 }
-.cards-ul{
+
+.cards-ul {
   align-items: center;
   justify-content: center;
   padding: none;
@@ -184,114 +198,165 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0% 10%;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0% 10%;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
-  .card {
-    flex: 0 0 auto;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    padding: 5px;
-    background: var(--cor-footer);
-    border-radius: 20px;
-    color: var(--cor-clara);
-    text-decoration: none;
-    transition: 0.5s;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
+.card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 5px;
+  background: var(--cor-footer);
+  border-radius: 20px;
+  color: var(--cor-clara);
+  text-decoration: none;
+  transition: 0.5s;
+}
 
-  }
-  
-  .card h3 {
-    text-align: center;
-    color: var(--cor-clara);
-    text-decoration: none;
-  }
-  .card h3:hover{
-    color: var(--cor-clara);
-  }
-  
-  .card:hover{
-    /* transform: scale(1.2); */
-    scale: 1.1;
-    background: var(--cor-footer);
-    color: var(--cor-clara);
-    transition: 1s;
-  }
+.card img {
+  width: 100%;
+  height: auto;
 
-  .card img{
-    border-radius: 20px;
-    text-decoration: none;
-  }
-  .card a{
-    text-decoration: none;
-  }
-  .conteudo{
-    margin: 5% 10%;
-    color: var(--cor-clara);
-    text-align: justify;
-  }
-  .fonte{
-    font-size: 70%;
-  }
-  .div-img{
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .div-img1{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+}
+
+.card h3 {
+  text-align: center;
+  color: var(--cor-clara);
+  text-decoration: none;
+}
+
+.card h3:hover {
+  color: var(--cor-clara);
+}
+
+.card:hover {
+  /* transform: scale(1.2); */
+  scale: 1.1;
+  background: var(--cor-footer);
+  color: var(--cor-clara);
+  transition: 1s;
+}
+
+.card img {
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.conteudo {
+  margin: 5% 10%;
+  color: var(--cor-clara);
+  text-align: justify;
+}
+
+.fonte {
+  font-size: 70%;
+}
+
+.div-img {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.div-img1 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 /*===========================================
 RESPONSIVIDADE
 ===========================================*/
 
-  @media screen and (max-width:580px){
-    .card-container{
-      margin: 0% 5%;
-    }
-    .card{
-      width: 150px;
-      height: 150px;
-      font-size: 70%;
-    }
+@media screen and (max-width:580px) {
+  .card-container {
+    margin: 0% 5%;
+  }
 
-    .oqueHistoria{
-        height: 100%;
-    }
-    .div-img img{
-        width: 70%;
-    }
+  .card {
+    width: 150px;
+    height: 150px;
+    font-size: 70%;
   }
-  @media screen and (max-width:420px){
-    .card-container{
-      margin: 0% 5%;
-    }
-    .card{
-      width: 120px;
-      height: 120px;
-      font-size: 70%;
-    }
+
+  .oqueHistoria {
+    height: 100%;
   }
-  @media screen and (min-width: 1250px){
-    .seção1{
-      height: 80vh;
-    }
-    .oqueHistoria{
-      height: 100%;
-    }
+
+  .div-img img {
+    width: 70%;
   }
+}
+
+@media screen and (max-width:420px) {
+  .card-container {
+    margin: 0% 5%;
+  }
+
+  .card {
+    width: 120px;
+    height: 120px;
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .seção1 {
+    height: 80vh;
+  }
+
+  .oqueHistoria {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  a.icon {
+    display: block;
+    font-size: 25pt;
+  }
+
+  .topnav {
+    display: none;
+  }
+}
+
+#linkMenus{
+  display: none;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  background-color: #100f49;
+  color: white;
+  gap: 30px;
+  top: 0;
+  padding: 30px;
+  height: 100vw;
+}
+
+
+#linkMenus > a{
+color: #100f49;
+}
+
+
+#linkMenus > li{
+  color: #100f49;
+  }
+  
+a.linkRes{
+  color: white;
+}
