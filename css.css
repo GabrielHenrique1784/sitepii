@@ -107,6 +107,10 @@ header.tudo-menu {
   display: block;
 }
 
+/*===========================================
+NAV'S
+===========================================*/
+
 .topnav a {
   background: var(--cor-fundo);
   padding: 14px 16px;
@@ -143,6 +147,11 @@ ul#navBar {
   display: flex;
 }
 
+/*===========================================
+FIM NAV'S
+===========================================*/
+
+
 .topnav a.icon :hover {
   background-color: #ddd;
   color: black;
@@ -166,6 +175,11 @@ ul#navBar {
 
 }
 
+/*===========================================
+SECTIONS
+===========================================*/
+
+
 .seção1 {
   background-color: var(--cor-footer);
   margin: 0;
@@ -184,6 +198,11 @@ ul#navBar {
   margin-top: 5%;
   background-color: #fff;
 }
+
+/*===========================================
+FIM SECTIONS 
+===========================================*/
+
 
 .cards1 {
   background-color: var(--cor-fundo);
@@ -207,6 +226,11 @@ ul#navBar {
   justify-content: center;
   align-items: center;
 }
+
+/*===========================================
+CARDS
+===========================================*/
+
 
 .card {
   flex: 0 0 auto;
@@ -253,6 +277,11 @@ ul#navBar {
 .card a {
   text-decoration: none;
 }
+
+/*===========================================
+FIM CARDS
+===========================================*/
+
 
 .conteudo {
   margin: 5% 10%;
